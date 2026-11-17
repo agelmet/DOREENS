@@ -1,0 +1,16 @@
+{
+ "source": {
+  "kind": "file",
+  "ref": "assets/img/doreens-house-icon.svg"
+ },
+ "source_md5": "674a42831d4922401040c654d66f9c10",
+ "version": "fea01170",
+ "tile": null,
+ "crop": null,
+ "header": [
+  "inline",
+  "index.html",
+  "9b6699b10ed27cd335ad0876a3852e91"
+ ],
+ "made": "2026-11-17"
+}
