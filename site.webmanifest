@@ -1,10 +1,10 @@
 {
- "name": "Doreen's House",
- "short_name": "Doreen's Hou",
+ "name": "Doreen",
+ "short_name": "Doreen",
  "start_url": "./",
  "display": "standalone",
- "background_color": "#FAF8F4",
- "theme_color": "#FAF8F4",
+ "background_color": "#F7F3EC",
+ "theme_color": "#F7F3EC",
  "icons": [
   {
    "src": "assets/icons/icon-192.png",
