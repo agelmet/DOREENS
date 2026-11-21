@@ -75,6 +75,68 @@
 }
 @media (prefers-reduced-motion:reduce){.hss .hs,.hss .hs img{transition:none!important;transform:none!important}.hsdot.on i::after{animation:none;transform:scaleX(1)}}
 </style>
+<style id="r3-css">
+.st-m{min-height:0;display:flex;justify-content:center}
+.st-m .sls{width:min(100%,460px)}
+/* less green: only the hero panel and the footer stay emerald */
+.tour{background:var(--paper2);color:var(--ink)}
+.tour h2{color:var(--ink)}.tour h2 em,.rvw h2 em{color:var(--dusk2)}
+.tour .kick,.rvw .kick{color:var(--dusk2)}
+.tb{color:var(--mute)}.tb.on{color:var(--ink)}.tb-n{color:var(--dusk2);opacity:1}.tb-ink{background:var(--dusk2)}
+.pan-t{color:var(--mute)}.pan .ph{background:var(--sand)}
+.tour .tlink.lt{color:var(--ink)}
+.rvw{background:var(--paper);color:var(--ink)}
+.rvw h2,.rvw .big{color:var(--ink)}
+.rv-st svg,.rc-st svg{color:var(--dusk)}
+.rv-score small{color:var(--mute)}
+.bars li,.rvw .bars li{color:var(--mute);border-top-color:var(--line)}
+.bars i{background:var(--line)}.bars b{background:var(--dusk)}
+.bars em{color:var(--ink)}.rvw .bars em{color:var(--dusk2)}
+.rv-note{color:var(--mute)}
+.rc{background:#fff;border-color:var(--line);color:var(--ink);box-shadow:0 18px 40px -30px rgba(0,0,0,.35)}
+.rc p{color:var(--ink)}.rc-b{color:var(--dusk2)}.rc-n{color:var(--mute)}
+.rc-w{border-top-color:var(--line)}.rc-w i{background:var(--dusk);color:#fff}.rc-w small{color:var(--mute)}
+.rvw .tlink.lt,.rvw .tlink{color:var(--ink)}
+.yard{position:relative;background:#16130F}
+.yard::before{display:none}
+.yard .yd-g{position:relative;z-index:1}
+.yard h2 em,.book h2 em{color:#E9CD92}
+.book{position:relative;background:#16130F}
+.book .bk-g{position:relative;z-index:1}
+.pbg{position:absolute;inset:0;overflow:hidden;z-index:0}
+.pbg-p{position:absolute;top:-14%;bottom:-14%;left:0;right:0;will-change:transform}
+.pbg img{width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.pbg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,19,15,.86) 0%,rgba(22,19,15,.6) 50%,rgba(22,19,15,.3) 100%)}
+.pbg-y img{object-position:50% 62%}
+.yd-ph{justify-content:flex-end}
+.yd-a{max-width:380px;margin-left:auto;border:10px solid #fff;border-radius:8px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+@media (max-width:900px){.pbg::after{background:rgba(22,19,15,.72)}.yd-a{margin:0 auto}}
+
+/* «Το σπίτι» slider */
+.sls{position:relative;width:100%;max-width:620px;margin-left:auto}
+.sls-box{position:relative;border-radius:22px;overflow:hidden;background:var(--sand);box-shadow:0 34px 70px -36px rgba(20,25,30,.55)}
+.sld{position:absolute;inset:0;margin:0;opacity:0;transition:opacity .9s ease}
+.sld.on{opacity:1;z-index:1}
+.sld .ph{display:block;width:100%;height:100%;background:none}
+.sld img{width:100%;height:100%;object-fit:cover;transform:scale(1.07);transition:transform 5s cubic-bezier(.2,.6,.3,1)}
+.sld.on img{transform:scale(1)}
+.sls-a{position:absolute;top:50%;z-index:3;width:46px;height:46px;margin-top:-23px;border:0;border-radius:50%;background:rgba(255,255,255,.88);color:var(--ink);display:grid;place-items:center;cursor:pointer;box-shadow:0 8px 20px -10px rgba(0,0,0,.5);opacity:0;transition:opacity .3s,transform .3s}
+.sls-a svg{width:22px;height:22px}.sls-p{left:14px}.sls-n{right:14px}
+.sls-box:hover .sls-a,.sls-a:focus-visible{opacity:1}
+@media (hover:none){.sls-a{opacity:1;width:40px;height:40px;margin-top:-20px}}
+.sls-u{display:flex;align-items:baseline;gap:14px;margin-top:16px;font-size:14px;color:var(--mute)}
+.sls-c{font-variant-numeric:tabular-nums;letter-spacing:.04em}.sls-c b{color:var(--ink);font-weight:600}
+.sls-t{font-family:var(--fd);font-size:19px;color:var(--ink);transition:opacity .4s}
+.sls-bars{display:flex;gap:6px;margin-top:12px}
+.slb{flex:1;height:22px;border:0;background:none;padding:0;cursor:pointer;display:grid;align-items:center}
+.slb i{display:block;height:2px;border-radius:2px;background:var(--line);position:relative;overflow:hidden}
+.slb i::after{content:"";position:absolute;inset:0;background:var(--ink);transform:scaleX(0);transform-origin:left}
+.slb.done i::after{transform:scaleX(1)}.slb.on i::after{animation:slBar var(--slT,3.6s) linear forwards}
+.sls.pause .slb.on i::after{animation-play-state:paused}
+@keyframes slBar{to{transform:scaleX(1)}}
+@media (max-width:900px){.sls{margin:0 auto}.sls-box{border-radius:16px}}
+@media (prefers-reduced-motion:reduce){.sld,.sld img{transition:none!important;transform:none!important}.slb.on i::after{animation:none;transform:scaleX(1)}}
+</style>
 </head>
 <body>
 <!-- hero v2 (21 Nov 2026): Airbnb’s first photos rotate every ~2.6 s · DOREEN'S HOUSE · Advon Media · style «Σμαράγδι & μπρούντζος» (Plum Guide / Le Collectionist listing structure × neoclassical Mytilene) · opening «Κλειδαρότρυπα» (a brass keyhole draws, then the page opens through it) · signatures: room-by-room tour tabs, «who sleeps where» scenarios, scroll-drawn walk through Mytilene -->
@@ -158,10 +220,7 @@
 <!-- ===== THE HOUSE ===== -->
 <section class="sec story" id="spiti">
  <div class="wrap st-g">
-  <div class="st-m">
-   <figure class="mir rv"><a class="ph" href="assets/img/doreens-house-mytilini-kathreftis-kamara-1200.webp"><img src="assets/img/doreens-house-mytilini-kathreftis-kamara-1200.webp" srcset="assets/img/doreens-house-mytilini-kathreftis-kamara-720.webp 720w, assets/img/doreens-house-mytilini-kathreftis-kamara-1200.webp 1200w" sizes="(max-width:900px) 70vw, 30vw" width="1200" height="1600" alt="Ο χρυσός τοξωτός καθρέφτης στον σμαραγδένιο τοίχο του Doreen&#x27;s House" data-en-alt="The gold arched mirror on the emerald wall of Doreen&#x27;s House" loading="lazy" decoding="async"></a></figure>
-   <figure class="mir2 rv" style="--d:2"><a class="ph" href="assets/img/doreens-house-mytilini-kremasta-fotistika-1200.webp"><img src="assets/img/doreens-house-mytilini-kremasta-fotistika-1200.webp" srcset="assets/img/doreens-house-mytilini-kremasta-fotistika-720.webp 720w, assets/img/doreens-house-mytilini-kremasta-fotistika-1200.webp 1200w" sizes="(max-width:900px) 50vw, 20vw" width="1200" height="1220" alt="Μπρούντζινα κρεμαστά φωτιστικά πάνω από την τραπεζαρία" data-en-alt="Brass pendant lights above the dining table" loading="lazy" decoding="async"></a></figure>
-  </div>
+  <div class="st-m"><div class="sls rv" aria-roledescription="carousel" aria-label="Φωτογραφίες του σπιτιού" data-en-aria="Photos of the house"><div class="sls-box" style="aspect-ratio:3/4"><figure class="sld on" data-cap="Ο χρυσός τοξωτός καθρέφτης" data-en-cap="The gold arched mirror"><a class="ph" href="assets/img/doreens-house-mytilini-kathreftis-kamara-hd-1350.webp"><img src="assets/img/doreens-house-mytilini-kathreftis-kamara-hd-900.webp" srcset="assets/img/doreens-house-mytilini-kathreftis-kamara-hd-540.webp 540w, assets/img/doreens-house-mytilini-kathreftis-kamara-hd-900.webp 900w, assets/img/doreens-house-mytilini-kathreftis-kamara-hd-1350.webp 1350w" sizes="(max-width:900px) 92vw, 40vw" width="1920" height="2560" alt="Ο μπρούντζινος τοξωτός καθρέφτης στον σμαραγδένιο τοίχο" data-en-alt="The arched brass mirror on the emerald wall" loading="lazy" decoding="async"></a></figure><figure class="sld" data-cap="Σαλόνι και τραπεζαρία" data-en-cap="Living and dining room"><a class="ph" href="assets/img/doreens-house-mytilini-trapezaria-hd-1350.webp"><img src="assets/img/doreens-house-mytilini-trapezaria-hd-900.webp" srcset="assets/img/doreens-house-mytilini-trapezaria-hd-540.webp 540w, assets/img/doreens-house-mytilini-trapezaria-hd-900.webp 900w, assets/img/doreens-house-mytilini-trapezaria-hd-1350.webp 1350w" sizes="(max-width:900px) 92vw, 40vw" width="1920" height="2560" alt="Η τραπεζαρία για τέσσερις με τις πράσινες καρέκλες" data-en-alt="The dining table for four with green chairs" loading="lazy" decoding="async"></a></figure><figure class="sld" data-cap="Υπνοδωμάτιο 1 · queen κρεβάτι" data-en-cap="Bedroom 1 · queen bed"><a class="ph" href="assets/img/doreens-house-mytilini-ypnodomatio-1-hd-1350.webp"><img src="assets/img/doreens-house-mytilini-ypnodomatio-1-hd-900.webp" srcset="assets/img/doreens-house-mytilini-ypnodomatio-1-hd-540.webp 540w, assets/img/doreens-house-mytilini-ypnodomatio-1-hd-900.webp 900w, assets/img/doreens-house-mytilini-ypnodomatio-1-hd-1350.webp 1350w" sizes="(max-width:900px) 92vw, 40vw" width="1920" height="2560" alt="Το υπνοδωμάτιο 1 με το queen κρεβάτι" data-en-alt="Bedroom 1 with the queen bed" loading="lazy" decoding="async"></a></figure><figure class="sld" data-cap="Η κουζίνα" data-en-cap="The kitchen"><a class="ph" href="assets/img/doreens-house-mytilini-kouzina-hd-1350.webp"><img src="assets/img/doreens-house-mytilini-kouzina-hd-900.webp" srcset="assets/img/doreens-house-mytilini-kouzina-hd-540.webp 540w, assets/img/doreens-house-mytilini-kouzina-hd-900.webp 900w, assets/img/doreens-house-mytilini-kouzina-hd-1350.webp 1350w" sizes="(max-width:900px) 92vw, 40vw" width="1920" height="2560" alt="Η πλήρως εξοπλισμένη κουζίνα" data-en-alt="The fully equipped kitchen" loading="lazy" decoding="async"></a></figure><figure class="sld" data-cap="Υπνοδωμάτιο 2 · με κουκέτα" data-en-cap="Bedroom 2 · with a bunk"><a class="ph" href="assets/img/doreens-house-mytilini-ypnodomatio-2-koukheta-hd-1350.webp"><img src="assets/img/doreens-house-mytilini-ypnodomatio-2-koukheta-hd-900.webp" srcset="assets/img/doreens-house-mytilini-ypnodomatio-2-koukheta-hd-540.webp 540w, assets/img/doreens-house-mytilini-ypnodomatio-2-koukheta-hd-900.webp 900w, assets/img/doreens-house-mytilini-ypnodomatio-2-koukheta-hd-1350.webp 1350w" sizes="(max-width:900px) 92vw, 40vw" width="1920" height="2560" alt="Το υπνοδωμάτιο 2 με διπλό κρεβάτι και κουκέτα" data-en-alt="Bedroom 2 with a double bed and a bunk" loading="lazy" decoding="async"></a></figure><figure class="sld" data-cap="Η αυλή" data-en-cap="The courtyard"><a class="ph" href="assets/img/doreens-house-mytilini-avli-dentro-hd-1350.webp"><img src="assets/img/doreens-house-mytilini-avli-dentro-hd-900.webp" srcset="assets/img/doreens-house-mytilini-avli-dentro-hd-540.webp 540w, assets/img/doreens-house-mytilini-avli-dentro-hd-900.webp 900w, assets/img/doreens-house-mytilini-avli-dentro-hd-1350.webp 1350w" sizes="(max-width:900px) 92vw, 40vw" width="1920" height="2560" alt="Η αυλή με το δέντρο μπροστά στο σπίτι" data-en-alt="The courtyard with its tree in front of the house" loading="lazy" decoding="async"></a></figure><button type="button" class="sls-a sls-p" aria-label="Προηγούμενη" data-en-aria="Previous"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><button type="button" class="sls-a sls-n" aria-label="Επόμενη" data-en-aria="Next"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div><div class="sls-u"><span class="sls-c"><b class="sls-i">01</b> / 06</span><span class="sls-t" data-en="The gold arched mirror">Ο χρυσός τοξωτός καθρέφτης</span></div><div class="sls-bars"><button type="button" class="slb on" aria-label="Φωτογραφία 1" data-en-aria="Photo 1"><i></i></button><button type="button" class="slb" aria-label="Φωτογραφία 2" data-en-aria="Photo 2"><i></i></button><button type="button" class="slb" aria-label="Φωτογραφία 3" data-en-aria="Photo 3"><i></i></button><button type="button" class="slb" aria-label="Φωτογραφία 4" data-en-aria="Photo 4"><i></i></button><button type="button" class="slb" aria-label="Φωτογραφία 5" data-en-aria="Photo 5"><i></i></button><button type="button" class="slb" aria-label="Φωτογραφία 6" data-en-aria="Photo 6"><i></i></button></div></div></div>
   <div class="st-t">
    <span class="kick rv" data-en="The house">Το σπίτι</span>
    <h2 class="lc" data-en="Renovated with care, <em>made for slow days</em>.">Ανακαινισμένο με φροντίδα, <em>για αργές μέρες</em>.</h2>
@@ -199,7 +258,7 @@
 </section>
 
 <!-- ===== COURTYARD ===== -->
-<section class="sec yard" id="avli">
+<section class="sec yard" id="avli"><div class="pbg pbg-y" aria-hidden="true"><div class="pbg-p" data-par=".18"><img src="assets/img/doreens-house-mytilini-avli-plakostroto-bg-hd-1200.webp" srcset="assets/img/doreens-house-mytilini-avli-plakostroto-bg-hd-720.webp 720w, assets/img/doreens-house-mytilini-avli-plakostroto-bg-hd-1200.webp 1200w, assets/img/doreens-house-mytilini-avli-plakostroto-bg-hd-1800.webp 1800w" sizes="100vw" width="1920" height="2560" alt="" loading="lazy" decoding="async"></div></div>
  <div class="wrap yd-g">
   <div class="yd-t">
    <span class="kick lt rv" data-en="The courtyard">Η αυλή</span>
@@ -208,7 +267,6 @@
   </div>
   <div class="yd-ph">
    <figure class="yd-a rv"><a class="ph" href="assets/img/doreens-house-mytilini-avli-dentro-1200.webp"><img src="assets/img/doreens-house-mytilini-avli-dentro-1200.webp" srcset="assets/img/doreens-house-mytilini-avli-dentro-720.webp 720w, assets/img/doreens-house-mytilini-avli-dentro-1200.webp 1200w" sizes="(max-width:900px) 46vw, 24vw" width="1200" height="1600" alt="Η αυλή του Doreen&#x27;s House με το δέντρο και την είσοδο του σπιτιού" data-en-alt="The courtyard of Doreen&#x27;s House with the young tree and the front door" loading="lazy" decoding="async"></a></figure>
-   <figure class="yd-b rv" style="--d:2"><a class="ph" href="assets/img/doreens-house-mytilini-avli-plakostroto-1200.webp"><img src="assets/img/doreens-house-mytilini-avli-plakostroto-1200.webp" srcset="assets/img/doreens-house-mytilini-avli-plakostroto-720.webp 720w, assets/img/doreens-house-mytilini-avli-plakostroto-1200.webp 1200w" sizes="(max-width:900px) 46vw, 24vw" width="1200" height="1600" alt="Η πλακόστρωτη αυλή και η αυλόπορτα προς τον δρόμο" data-en-alt="The paved courtyard and the gate to the street" loading="lazy" decoding="async"></a></figure>
   </div>
  </div>
 </section>
@@ -265,7 +323,7 @@
 </section>
 
 <!-- ===== BOOKING ===== -->
-<section class="sec book" id="kratisi">
+<section class="sec book" id="kratisi"><div class="pbg" aria-hidden="true"><div class="pbg-p" data-par=".2"><img src="assets/img/doreens-house-mytilini-saloni-trapezaria-bg-hd-1600.webp" srcset="assets/img/doreens-house-mytilini-saloni-trapezaria-bg-hd-960.webp 960w, assets/img/doreens-house-mytilini-saloni-trapezaria-bg-hd-1600.webp 1600w, assets/img/doreens-house-mytilini-saloni-trapezaria-bg-hd-2400.webp 2400w" sizes="100vw" width="2560" height="1920" alt="" loading="lazy" decoding="async"></div></div>
  <div class="wrap bk-g">
   <div class="bk-t">
    <span class="kick lt rv" data-en="Book">Κράτηση</span>
@@ -323,6 +381,19 @@ B.forEach(function(b,j){b.addEventListener('click',function(){set(j);loop()})});
 var hd=document.querySelector('.hd');function hh(){if(hd)document.documentElement.style.setProperty('--hdh',hd.offsetHeight+'px')}hh();addEventListener('resize',hh);
 if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;loop()}).observe(h);
 document.addEventListener('visibilitychange',loop);loop()})();</script>
+<script id="r3-js">(function(){document.querySelectorAll('.sls').forEach(function(w){var F=[].slice.call(w.querySelectorAll('.sld')),B=[].slice.call(w.querySelectorAll('.slb')),I=w.querySelector('.sls-i'),C=w.querySelector('.sls-t'),i=0,t=null,T=3600,vis=false,hov=false;
+var RM=matchMedia('(prefers-reduced-motion:reduce)').matches;w.style.setProperty('--slT',T+'ms');
+function en(){return document.documentElement.lang==='en'}
+function set(n){F[i].classList.remove('on');i=(n+F.length)%F.length;F[i].classList.add('on');B.forEach(function(b,j){b.classList.toggle('done',j<i);b.classList.remove('on')});void B[i].offsetWidth;B[i].classList.add('on');
+ I.textContent=(i<9?'0':'')+(i+1);var c=F[i].getAttribute(en()?'data-en-cap':'data-cap');C.textContent=c;C.setAttribute('data-el',F[i].getAttribute('data-cap'));C.setAttribute('data-en',F[i].getAttribute('data-en-cap'));
+ var nx=F[(i+1)%F.length].querySelector('img');if(nx.loading==='lazy')nx.loading='eager'}
+function loop(){clearTimeout(t);w.classList.toggle('pause',hov);if(RM||!vis||hov||document.hidden)return;t=setTimeout(function(){set(i+1);loop()},T)}
+w.querySelector('.sls-p').addEventListener('click',function(){set(i-1);loop()});w.querySelector('.sls-n').addEventListener('click',function(){set(i+1);loop()});
+B.forEach(function(b,j){b.addEventListener('click',function(){set(j);loop()})});
+var box=w.querySelector('.sls-box');box.addEventListener('mouseenter',function(){hov=true;loop()});box.addEventListener('mouseleave',function(){hov=false;loop()});
+var sx=null;box.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});box.addEventListener('touchend',function(e){if(sx==null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){set(i+(dx<0?1:-1));loop()}sx=null},{passive:true});
+if('IntersectionObserver' in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting;if(vis)F.forEach(function(f){var m=f.querySelector('img');m.loading='eager'});loop()},{threshold:.25}).observe(w);
+document.addEventListener('visibilitychange',loop)})})();</script>
 <script id="advon-en-nav">/* flags = links between / and /en (Google ranks both) */document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("button[data-l],button[data-lang],a[data-l],a[data-lang],[data-set-lang]");if(!b)return;var l=b.getAttribute("data-l")||b.getAttribute("data-lang")||b.getAttribute("data-set-lang");if(l==="el"||(l!=="el"&&l!=="en"))return;e.preventDefault();e.stopImmediatePropagation();location.href=(l==="en"?"en":"./")+location.hash},true)</script>
 </body>
 </html>
